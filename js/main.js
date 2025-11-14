@@ -3,6 +3,7 @@ const menu = document.querySelector(".menu__list");
 
 menuBtn.addEventListener("click", () => {
   menu.classList.toggle("active");
+  menuBtn.classList.toggle("active");
 });
 
 const swiper = new Swiper(".projects__slider", {
@@ -11,6 +12,8 @@ const swiper = new Swiper(".projects__slider", {
   loop: true,
 
   breakpoints: {
+    0: 
+    { slidesPerView: 1, spaceBetween: 20 },
     640: {
       slidesPerView: 2,
       spaceBetween: 20,
